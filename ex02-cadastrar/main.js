@@ -61,7 +61,7 @@ function addNewTechnology() {
 form.addEventListener('submit', function (ev) {
     ev.preventDefault()
   
-    const fullnameInput = document.getElementById('fullname')
+    const fullnameInput = document.getElementById('fullName')
     const inputRows = document.querySelectorAll('.inputRow')
   
     let technologies = []
