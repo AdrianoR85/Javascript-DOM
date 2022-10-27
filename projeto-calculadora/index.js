@@ -13,6 +13,8 @@ document.querySelectorAll('.charKey').forEach(function(charKeyBtn) {
 
 document.getElementById('clear').addEventListener('click', function() {
     input.value = ''
+    resultInput.value = ""
+    resultInput.classList.remove('error')
     input.focus()
 })
 
@@ -36,7 +38,7 @@ document.getElementById("equal").addEventListener("click", calculate)
 function calculate() {
     resultInput.value = 'ERROR'
     resultInput.classList.add('error')
-    
+
     const result = eval(input.value)
     resultInput.value = result
 
